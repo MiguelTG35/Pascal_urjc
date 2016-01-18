@@ -1,5 +1,9 @@
 PROGRAM tienda;
 
+{Si no pone nada el codigo es de Robert Alexandru Dobre}
+{Si pone algo es de quien lo ha hecho xd}
+{Pero mi participión está generalizada en todo el proyecto}
+
 CONST{main}
     NCTIPO = 15; {número caracteres tipo}
     NCIDENTIFICADOR = 4; {número caracteres del identificador del componente}

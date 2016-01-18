@@ -185,6 +185,7 @@ BEGIN{OVender}
 	writeln('Ordenador con el identificador ', id,' vendido.');{para confirmacion}
 END;{OVender}
 
+{Robert Alexandru Dobre}
 {Permite dar de alta un nuevo componente en la tienda}
 PROCEDURE darAltaComp(VAR tienda : tTienda);{dar alta un componente}
 VAR{DarAltaComp}
@@ -262,6 +263,7 @@ BEGIN{DarAltaComp}
 	writeln(); {ESPACIO}
 END;{DarAltaComp}
 
+{Robert Alexandru Dobre}
 {Permite modificar un componente creado}
 PROCEDURE modificar(index: integer; VAR tienda: tTienda);
 	PROCEDURE menuMod(componente: tComponente);
@@ -362,6 +364,7 @@ BEGIN{MostrarComp}
 	END; {WITH}
 END;{MostrarComp}
 
+{Miguel Torrijos}
 {Guardo los datos en el un archivo binario}
 PROCEDURE guardarDAT(compFile: string; pcFile: string; tienda: tTienda);
 VAR{guardarDAT}
@@ -405,6 +408,7 @@ BEGIN{guardarDAT}
 	close(filePC); {Cierro el archivo}
 END;
 
+{Miguel Torrijos}
 {Guardo los datos en el un archivo de texto}
 PROCEDURE guardarTXT(compFile: string; pcFile: string; tienda: tTienda);
 VAR{guardarTxt}
@@ -471,6 +475,7 @@ BEGIN{guardarTxt}
 	close(filePC); {Cierro el archivo}
 END;{guardarTxt}
 
+{Miguel Torrijos}
 {Cargo los archivos en la tienda reemplazando los valores existentes}
 PROCEDURE cargarTXT(compFile: string; pcFile: string; VAR tienda: tTienda);
 VAR{cargarTxt}
@@ -541,6 +546,7 @@ BEGIN{cargarTxt}
 	close(filePC);
 END;{cargarTxt}
 
+{Miguel Torrijos}
 {Cargo los datos de los archivos binarios y reemplazo los actuales registros}
 PROCEDURE cargarDAT(compFile: string; pcFile: string; VAR tienda: tTienda);
 VAR{cargarDat}
@@ -588,6 +594,7 @@ BEGIN{cargarDat}
 	close(filePC);
 END;{cargarDat}
 
+{Miguel Torrijos}
 {Le paso el tipo de componente y muestro todos los que hay,}
 {y devuelvo el indice del componente que el usuario ha elegido}
 FUNCTION elegirComponente(tipoComp: string; tienda: tTienda): integer;
@@ -675,6 +682,7 @@ BEGIN{componenteDiferente}
 END; {ComponenteDiferente}
 
 {Configuro un nuevo ordenador}
+{Miguel Torrijos}
 PROCEDURE configurarPC(VAR tienda: tTienda);
 VAR{configurarPC}
 	index: integer; {Le paso el indice del componente almacenado}
@@ -866,6 +874,7 @@ BEGIN{configurarPC}
 END; {configurarPC}
 
 {Muestra el menu del programa}
+{Yamil Fernando Torrez Garcia}
 PROCEDURE mostrarMenu;
 BEGIN{MostrarMenu}
 	writeln('**************** MENU ****************');
